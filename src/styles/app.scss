@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+:root {
+  --primary-color: #A53653;
+  --secondary-color: #858585;
+  --white-color: #ffffff;
+  --grey-color: #f8f8f8;
+}
+
+* {
+  font-family: 'Lato', sans-serif !important;
+}
+
+body {
+  background-color: var(--grey-color);
+  /* color: var(--secondary-color); */
+  color: var(--primary-color);
+}

@@ -1,0 +1,6 @@
+use work-share
+db.createCollection('posts')
+
+db.posts.insert({ title: 'CSS BEM Refactor', shortDescription: 'A Requirement from website operations team to refactor existing css', status: '', knowledgeRequired: ['HTML', 'CSS', 'BEM'], description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisinuli.', startDate: '27th Jan of 2018', endDate: '27th Jan of 2018', contact: 'Akila Sankaran, akilandeswari@freshdesk.com' });
+
+db.posts.insert([{ title: 'Google Login Integrations', shortDescription: 'A Requirement from website operations team to implement google login', status: '', knowledgeRequired: ['Google Auth', 'Javascript'], description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisinuli.', startDate: '27th Jan of 2018', endDate: '27th Jan of 2018', contact: 'Akila Sankaran, akilandeswari@freshdesk.com' }]);
