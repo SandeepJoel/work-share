@@ -1,10 +1,10 @@
 {
-  "name": "",
-  "description": "",
-  "repository": "",
-  "scripts": {},
-  "env": {},
-  "addons": [],
-  "buildpacks": [],
-  "environments": {}
+  'name': '',
+  'description': '',
+  'repository': '',
+  'scripts': {},
+  'env': {},
+  'addons': [],
+  'buildpacks': [],
+  'environments': {}
 }
