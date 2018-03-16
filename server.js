@@ -52,26 +52,32 @@ mongo.connect(dbUrl, function (err, database) {
   console.log('Connected successfully to work-share database');
 
   app.post('/posts', function (req, res) {
-    db.collection('posts').find({}).toArray(function (err, result) {
-      if (result.length !== 0) {
-        res.json({ 'posts': result });
-        console.log('yup');
-      }
-      if (err) {
-        throw err;
-      }
-    });
+    console.log('connecting to /posts');
+    // db.collection('posts').find({}).toArray(function (err, result) {
+    //   if (result.length !== 0) {
+    //     res.json({ 'posts': result });
+    //     console.log('yup');
+    //   }
+    //   if (err) {
+    //     throw err;
+    //   }
+    // });
   });
 
   app.post('/posts/:post_id', function (req, res) {
-    db.collection('posts').findOne({'_id': ObjectId(req.params.post_id)}, function (err, result) {
-      if (result.length !== 0) {
-        res.json({ 'post': result });
-      }
-      if (err) {
-        throw err;
-      }
-    });
+    console.log('connecting to /posts/post_id');
+    // db.collection('posts').findOne({'_id': ObjectId(req.params.post_id)}, function (err, result) {
+    //   if (result.length !== 0) {
+    //     res.json({ 'post': result });
+    //   }
+    //   if (err) {
+    //     throw err;
+    //   }
+    // });
+  });
+
+  app.post('/register', function (req, res) {
+    console.log('connecting to /register');
   });
 
   app.get('*', function (req, res) {

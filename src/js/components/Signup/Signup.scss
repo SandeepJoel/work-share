@@ -1,0 +1,32 @@
+.row {
+  margin: 200px;
+}
+
+.signup-button, .login-button {
+  margin:20px;
+}
+button {
+  color: #2ecc71;
+}
+
+.link-text {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  font-style: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.link-text:hover {
+  color: white;
+  text-decoration: none;
+}
+
+label {
+  color: #2ecc71;
+}
+.heading {
+  color:#bdc3c7;
+  margin: 15px;
+  text-align: center;
+}
